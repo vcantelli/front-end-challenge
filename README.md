@@ -20,8 +20,6 @@ A Vagas vai patrocinar um evento e fornecer alguns adesivos (stickers) para as p
 ## Código
 Você deve utilizar o código deste repositório, como ponto de partida, mas esperamos que você utilize seu próprio GitHub para o desenvolvimento do seu desafio e nos envie o link do repositório no final. Aah, e você pode utilizar as dependências que achar melhor, caso queira.
 
-[Acessar código ponto de partida](https://codesandbox.io/s/frontend-dchtk)
-
 - 📙 Vamos avaliar seu JavaScript, HTML e CSS, independentemente das bibliotecas que você utilizar.
 - 📙 Vamos avaliar a organização e performance do seu código.
 - 📙 E também vamos avaliar a acessibilidade e usabilidade da sua UI.
@@ -47,13 +45,11 @@ Desejamos um ótimo teste para você!!
 
 ----
 
-
 ## Links úteis
 Eles poderão te ajudar no teste:
 - https://developer.mozilla.org/pt-BR/docs/Web
 - https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA
 ----
-
 
 ## Pronto, e agora?
 - [ ] Envie o link da sua publicação e repositório do projeto para [codesubmissions@vagas.com.br](codesubmissions@vagas.com.br) 
