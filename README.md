@@ -22,9 +22,9 @@ Você deve utilizar o código abaixo, ~que tá uma beleza~ como ponto de partida
 
 [Acessar código ponto de partida](https://codesandbox.io/s/frontend-dchtk)
 
-> 📙 Vamos avaliar seu JavaScript, HTML e CSS, independentemente das bibliotecas que você utilizar.
-> 📙 Vamos avaliar a organização e performance do seu código.
-> 📙 E também vamos avaliar a acessibilidade e usabilidade da sua UI.
+- 📙 Vamos avaliar seu JavaScript, HTML e CSS, independentemente das bibliotecas que você utilizar.
+- 📙 Vamos avaliar a organização e performance do seu código.
+- 📙 E também vamos avaliar a acessibilidade e usabilidade da sua UI.
 
 ## Primeira parte: colocando ordem na casa.
 - [ ] Use as tags HTML de forma semântica para cada cenário.
