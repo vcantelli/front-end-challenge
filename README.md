@@ -18,7 +18,7 @@ A Vagas vai patrocinar um evento e fornecer alguns adesivos (stickers) para as p
 [Acessar protótipo de exemplo](https://www.figma.com/file/Ly86lgfa2qYMB1mV1FYpLEQT/frontend-test?node-id=0%3A2)
 
 ## Código
-Você deve utilizar o código deste repositório, como ponto de partida, mas esperamos que você utilize o GitHub para o desenvolvimento do seu desafio e nos envie o link do repositório no final. Aah, e você pode utilizar as dependências que achar melhor, caso queira.
+Você deve utilizar o código deste repositório, como ponto de partida, mas esperamos que você utilize seu próprio GitHub para o desenvolvimento do seu desafio e nos envie o link do repositório no final. Aah, e você pode utilizar as dependências que achar melhor, caso queira.
 
 [Acessar código ponto de partida](https://codesandbox.io/s/frontend-dchtk)
 
