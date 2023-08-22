@@ -53,7 +53,7 @@ Eles poderão te ajudar no teste:
 
 ## Pronto, e agora?
 - [ ] Envie o link da sua publicação e repositório do projeto para [codesubmissions@vagas.com.br](codesubmissions@vagas.com.br) 
-- [ ] Coloque no assunto do email: "Front-end Developer Pleno VAGAS.com - *seu nome aqui*"
+- [ ] Coloque no assunto do email: "Front-end Developer (Pleno ou Sênior) VAGAS.com - *seu nome aqui*"
 - [ ] No corpo do email, informe qual nível de senioridade você se considera
 - [ ] Deixe alguns de seus contatos como linkedin e telefone
 - [ ] Se quiser, inclua no email, links de outros projetos relevantes que queira nos mostrar.
