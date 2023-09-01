@@ -44,6 +44,8 @@ header h1 {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  background-color: #2f3676;
+  width: fit-content;
 }
 
 header h1 em {
