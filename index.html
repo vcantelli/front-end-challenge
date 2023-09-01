@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -32,9 +33,9 @@
         <fieldset>
           <legend>Quantos stickers de cada?</legend>
           <div>
-            <button type="button">-</button>
-            <input type="number" />
-            <button type="button">+</button>
+            <button id="decrement-button" type="button">-</button>
+            <input id="stickers-quantity" type="number" min="1" />
+            <button id="increment-button" type="button">+</button>
           </div>
         </fieldset>
         <fieldset>
@@ -42,7 +43,8 @@
           <textarea name="descricao" placeholder="- Gostaria de stickers 3x2cm.&#10;- Com papel especial laminado.&#10;- Manda um beijo pro Julio!"></textarea>
         </fieldset>
         <footer>
-          <button>Enviar</button>
+          <output></output>
+          <button id="submit">Enviar</button>
         </footer>
       </form>
     </main>

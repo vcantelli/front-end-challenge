@@ -79,12 +79,21 @@ fieldset input[type='checkbox'] {
   cursor: pointer;
 }
 
+
 fieldset div {
   margin: 8px 0;
 }
 
 fieldset input[type='checkbox']:checked {
   background: #FFF url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj4NCjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy40Mjg1NyAwQzEuNTM2IDAgMCAxLjUzNiAwIDMuNDI4NTdWMjAuNTcxNEMwIDIyLjQ2NCAxLjUzNiAyNCAzLjQyODU3IDI0SDIwLjU3MTRDMjIuNDY0IDI0IDI0IDIyLjQ2NCAyNCAyMC41NzE0VjMuNDI4NTdDMjQgMS41MzYgMjIuNDY0IDAgMjAuNTcxNCAwSDMuNDI4NTdaTTEwLjI4NTcgMTcuODUyNkw1LjY0NTE0IDEzLjIxMkw4LjA2OTE0IDEwLjc4OEwxMC4yODU3IDEzLjAwNDZMMTYuNzg4IDYuNTAyMjlMMTkuMjEyIDguOTI2MjlMMTAuMjg1NyAxNy44NTI2WiIgZmlsbD0iIzJGMzY3NiIvPg0KPC9zdmc+) 50% 40% no-repeat;
+}
+
+fieldset input[type='checkbox']:invalid {
+  background-color: #F59393;
+}
+
+fieldset input[type='checkbox']:hover {
+  background-color: #191847;
 }
 
 fieldset label {
@@ -109,6 +118,10 @@ fieldset button {
   cursor: pointer;
 }
 
+fieldset button:hover {
+  background: #191847;
+}
+
 fieldset input[type='number'] {
   width: 60px;
   height: 42px;
@@ -120,7 +133,7 @@ fieldset input[type='number'] {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding-left: 11px;
+  text-align: center;
   vertical-align: middle;
 }
 
@@ -132,6 +145,11 @@ fieldset input[type='number']::-webkit-outer-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+fieldset input[type='number']:invalid {
+  background-color: #F59393;
+  border: 1px solid #F33232;
 }
 
 fieldset textarea {
@@ -163,9 +181,35 @@ footer button {
   border: none;
   border-radius: 7px;
   background: #2F3676;
+  border: 2px solid #2F3676;
   padding: 8px 32px;
   text-transform: uppercase;
   margin: 32px;
   cursor: pointer;
+}
+
+
+footer button:hover {
+  border: 2px solid #2F3676;
+  background: #191847;
+}
+
+footer button:disabled {
+  border-radius: 7px;
+  border: 2px solid #555;
+  background: #C5CFD6;
+  color: #555;
+  cursor: initial;
+}
+
+output {
+  color: #00C57C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: center;
+  margin-right: auto;
+  margin-left: 32px;
 }
 
