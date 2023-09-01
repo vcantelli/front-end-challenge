@@ -1,62 +1,33 @@
 # Desafio Front-end
 
-No dia-a-dia, temos alguns desafios, como desenvolver componentes, aplicações, lidar com prazos e etc. Mas sabe o que é um desafio de verdade? Manter um código bom mesmo com situações corriqueiras 💩. 
+Olá! Segue url do projeto: https://front-end-challenge-woad-ten.vercel.app/
 
-Esse desafio simula situações descritas acima. E tem como objetivo aferir conhecimentos diversos do universo de front-end: HTML, CSS, Javascript, semântica, acessibilidade, componentização…
+## Rodando o projeto
+Para rodar o projeto é só rodar os comandos:
 
-> 📙 Importante ressaltar que esse teste é qualitativo e não quantitativo,
-vamos levar em consideração a qualidade do código e não o número de
-etapas concluídas.
+`npm install`
 
-Ele foi separado em etapas, então, sinta-se a vontade para fazer até onde der.
+e 
 
-## Enunciado do desafio
-A Vagas vai patrocinar um evento e fornecer alguns adesivos (stickers) para as pessoas que irão participar. Criamos um aplicativo web para fazer o controle de quantos adesivos serão entregues. Porém, o app ainda não está pronto e precisamos da sua ajuda para finalizá-lo. Esperamos que você faça propostas a respeito da aplicação, incluindo validações e outras decisões como UX e usabilidade.
+`npm run start`
 
-#### Protótipo de exemplo
-> 📙 _A designer responsável disponibilizou um protótipo no figma com o exemplo do visual da aplicação_
-[Acessar protótipo de exemplo](https://www.figma.com/file/Ly86lgfa2qYMB1mV1FYpLEQT/frontend-test?node-id=0%3A2)
 
-## Código
-Você deve utilizar o código deste repositório, como ponto de partida, mas esperamos que você utilize seu próprio GitHub para o desenvolvimento do seu desafio e nos envie o link do repositório no final. Aah, e você pode utilizar as dependências que achar melhor, caso queira.
+## Desenvolvimento
+Tentei seguir uma ordem de commits para que vocês possam ver qual foi o processo que segui na construção desse desafio.
 
-- 📙 Vamos avaliar seu JavaScript, HTML e CSS, independentemente das bibliotecas que você utilizar.
-- 📙 Vamos avaliar a organização e performance do seu código.
-- 📙 E também vamos avaliar a acessibilidade e usabilidade da sua UI.
+## Acessibilidade
+Gostaria de ressaltar que a única coisa que ficou fora do padrão do Figma foi a fonte dos checkboxes e da textarea. Essas fontes estavam em 14px, então acabei aumentando-as por conta da acessibilidade. (Acredito que a partir de 16px já esteja tudo ok, mas alguns guidelines mostram que o melhor seja a partir de 18px, então optei por essa opção).
+Aqui estão alguns resultados de testes que efetuei para validar a acessibilidade e o SEO da página:
 
-## Primeira parte: colocando ordem na casa.
-- [ ] Use as tags HTML de forma semântica para cada cenário.
-- [ ] Fique a vontade para mudar a estrutura da aplicação caso ache necessário.
-- [ ] Na tag `<html>`, está faltando um parâmetro que é obrigatório. Você consegue identificar e aplicar?
-- [ ] Construa um formulário funcional
+#### Lighthouse:
 
-## Segunda parte: tornando a casa acessível.
-- [ ] Vixe!😱 Parece que o HTML não está totalmente acessível. Você consegue melhorar a acessibilidade?
+![image](https://github.com/vcantelli/front-end-challenge/assets/5498869/68bfc2bf-b104-4b9f-a439-1d61b2a245db)
 
-## Terceira parte: vamos validar o formulário?
-- [ ] Validações de formulário ajudam o usuário a não se perder durante o preenchimento das informações necessárias.
+#### WAVE:
 
-## Bonus: publicando a aplicação!
-Precisamos acessar a aplicação através de uma URL, fique a vontade para usar o serviço de hospedagem que quiser. (Por exemplo: Github pages, Vercel, AWS e etc...)
+![image](https://github.com/vcantelli/front-end-challenge/assets/5498869/6923bc15-5456-47ec-bd8b-bebc66101682)
 
-Não esqueça de inserir no readme do seu projeto, as instruções de como rodar sua aplicação de forma local ;)
+#### PowerMapper:
 
-Desejamos um ótimo teste para você!!
+![image](https://github.com/vcantelli/front-end-challenge/assets/5498869/c3e88d42-dafe-42a9-8072-a139c2bc5940)
 
-----
-
-## Links úteis
-Eles poderão te ajudar no teste:
-- https://developer.mozilla.org/pt-BR/docs/Web
-- https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA
-----
-
-## Pronto, e agora?
-- [ ] Envie o link da sua publicação e repositório do projeto para [codesubmissions@vagas.com.br](codesubmissions@vagas.com.br) 
-- [ ] Coloque no assunto do email: "Front-end Developer (Pleno ou Sênior) VAGAS.com - *seu nome aqui*"
-- [ ] No corpo do email, informe qual nível de senioridade você se considera
-- [ ] Deixe alguns de seus contatos como linkedin e telefone
-- [ ] Se quiser, inclua no email, links de outros projetos relevantes que queira nos mostrar.
-- [ ] Antes de enviar, verifique se o link do seu github é o correto e se tudo está funcionando corretamente
-
-E em breve, retornaremos com mais detalhes :heart:
