@@ -5,8 +5,8 @@
     <title>Teste Frontend VAGAS.com</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Vagas vai patrocinar um evento e fornecer alguns adesivos (stickers) para as pessoas que irão participar. Criamos um aplicativo web para fazer o controle de quantos adesivos serão entregues.">
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -34,13 +34,14 @@
           <legend>Quantos stickers de cada?</legend>
           <div>
             <button id="decrement-button" type="button">-</button>
-            <input id="stickers-quantity" type="number" min="1" />
+            <label for="stickers-quantity" class="visually-hidden">Quantidade de stickers: </label>
+            <input id="stickers-quantity" name="stickers-quantity" type="number" min="1" />
             <button id="increment-button" type="button">+</button>
           </div>
         </fieldset>
         <fieldset>
           <legend>Observações:</legend>
-          <textarea name="descricao" placeholder="- Gostaria de stickers 3x2cm.&#10;- Com papel especial laminado.&#10;- Manda um beijo pro Julio!"></textarea>
+          <textarea id="comments" name="comments" placeholder="- Gostaria de stickers 3x2cm.&#10;- Com papel especial laminado.&#10;- Manda um beijo pro Julio!"></textarea>
         </fieldset>
         <footer>
           <output></output>
@@ -49,7 +50,7 @@
       </form>
     </main>
 
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 
 </html>

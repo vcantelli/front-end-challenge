@@ -1,76 +1,92 @@
-$(document).ready(() => {
-  var stickers = $('form :checkbox');
-  stickers.change(() => {
-    checkIfSubmitIsValid()
-    const isAtLeastOneChecked = $('form :checkbox:checked').length > 0
-    if(isAtLeastOneChecked) {
-      stickers.removeAttr('required');
-      stickers.next().css('color', '#071723');
-    }
-  });
+document.addEventListener('DOMContentLoaded', () => {
 
-  $('#increment-button').on('click', () => {
+  const stickers = document.querySelectorAll('input[type=checkbox]')
+
+  stickers.forEach(sticker => {
+    sticker.onchange = () => {
+      checkIfSubmitIsValid()
+      const isAtLeastOneChecked = document.querySelectorAll('input[type=checkbox]:checked').length > 0
+      if (isAtLeastOneChecked) {
+        stickers.forEach(sticker => {
+          sticker.required = false;
+          sticker.nextElementSibling.style.color = '#071723';
+        })
+        return true
+      } else {
+        stickers.forEach(sticker => {
+          sticker.required = true;
+          sticker.nextElementSibling.style.color = '#F33232';
+        })
+      }
+    };
+  })
+
+  document.querySelector('#increment-button').onclick = () => {
     document.getElementById('stickers-quantity').value++;
     checkIfSubmitIsValid()
     preventNegativaQuantity()
-  });
+  };
 
-  $('#decrement-button').on('click', () => {
+  document.querySelector('#decrement-button').onclick = () => {
     document.getElementById('stickers-quantity').value--;
     checkIfSubmitIsValid()
     preventNegativaQuantity()
-  });
+  };
 
-  $('#stickers-quantity').on('change', () => {
+  document.querySelector('#stickers-quantity').change = () => {
     checkIfSubmitIsValid()
     preventNegativaQuantity()
-  })
+  }
 
-  $('form').submit((e) => {
+  document.querySelector('form').onsubmit = (e) => {
     e.preventDefault();
     if (isFormValid()) {
-      $('output').val('Formulário enviado com sucesso!')
+      document.querySelector('output').value = 'Formulário enviado com sucesso!';
     } else {
-      $('output').val('')
+      document.querySelector('output').value = '';
     }
-  });
+  };
 
   const isFormValid = () => {
     if (isStickersValid() && isQuantityValid()) {
       return true
     } else {
-      $('#submit').prop('disabled', true);
+      document.querySelector('#submit').disabled = true;
       return false
     }
   }
 
   const checkIfSubmitIsValid = () => {
     if (isStickersValid() && isQuantityValid()) {
-      $('#submit').prop('disabled', false);
+      document.querySelector('#submit').disabled = false;
     } else {
-      $('output').val('')
-      $('#submit').prop('disabled', true);
+      document.querySelector('output').value = ''
+      document.querySelector('#submit').disabled = true;
     }
   }
 
   const isStickersValid = () => {
-    var stickers = $('form :checkbox');
-    const isAtLeastOneChecked = $('form :checkbox:checked').length > 0
-    if(isAtLeastOneChecked) {
-      stickers.removeAttr('required');
-      stickers.next().css('color', '#071723');
+    var stickers = document.querySelectorAll('input[type=checkbox]');
+    const isAtLeastOneChecked = document.querySelectorAll('input[type=checkbox]:checked').length > 0
+    if (isAtLeastOneChecked) {
+      stickers.forEach(sticker => {
+        sticker.required = false;
+        sticker.nextElementSibling.style.color = '#071723';
+      })
       return true
     } else {
-      stickers.attr('required', 'required');
-      stickers.next().css('color', '#F33232');
+      stickers.forEach(sticker => {
+        sticker.required = true;
+        sticker.nextElementSibling.style.color = '#F33232';
+      })
       return false
     }
   }
 
   const isQuantityValid = () => {
-    if ($('#stickers-quantity').val() == 0 || !$('#stickers-quantity').val()) {
-      $('#stickers-quantity').attr('required', 'required');
-      $('#stickers-quantity').prop('invalid', true);
+    if (document.querySelector('#stickers-quantity').value <= 0 || !document.querySelector('#stickers-quantity').value) {
+      document.querySelector('#stickers-quantity').required = true
+      document.querySelector('#stickers-quantity').invalid = true
       return false
     } else {
       return true
@@ -78,12 +94,10 @@ $(document).ready(() => {
   }
 
   const preventNegativaQuantity = () => {
-    if ($('#stickers-quantity').val() <= 0) {
-      $('#stickers-quantity').val(0)
+    if (document.querySelector('#stickers-quantity').value <= 0) {
+      document.querySelector('#stickers-quantity').value = 0
     } else {
-      $('#stickers-quantity').removeAttr('required');
+      document.querySelector('#stickers-quantity').required = false
     }
   }
 });
-
-
