@@ -24,18 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#increment-button').onclick = () => {
     document.getElementById('stickers-quantity').value++;
     checkIfSubmitIsValid()
-    preventNegativaQuantity()
+    preventNegativeQuantity()
   };
 
   document.querySelector('#decrement-button').onclick = () => {
     document.getElementById('stickers-quantity').value--;
     checkIfSubmitIsValid()
-    preventNegativaQuantity()
+    preventNegativeQuantity()
   };
 
   document.querySelector('#stickers-quantity').change = () => {
     checkIfSubmitIsValid()
-    preventNegativaQuantity()
+    preventNegativeQuantity()
   }
 
   document.querySelector('form').onsubmit = (e) => {
@@ -93,11 +93,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const preventNegativaQuantity = () => {
+  const preventNegativeQuantity = () => {
     if (document.querySelector('#stickers-quantity').value <= 0) {
       document.querySelector('#stickers-quantity').value = 0
+      document.querySelector('#decrement-button').disabled = true;
     } else {
       document.querySelector('#stickers-quantity').required = false
+      document.querySelector('#decrement-button').disabled = false;
     }
   }
 });

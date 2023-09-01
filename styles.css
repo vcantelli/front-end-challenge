@@ -124,6 +124,15 @@ fieldset button:hover {
   background: #191847;
 }
 
+fieldset button:disabled {
+  border-radius: 7px;
+  border: 2px solid #555;
+  background: #C5CFD6;
+  color: #555;
+  cursor: initial;
+}
+
+
 fieldset input[type='number'] {
   width: 60px;
   height: 42px;
